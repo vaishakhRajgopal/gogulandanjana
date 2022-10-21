@@ -78,7 +78,15 @@
 				<div class="col-md-8 col-md-offset-2 text-bottom">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Save the date</h1>
+							<script>
+								function play() {
+								  var audio = document.getElementById("audio");
+								  audio.play();
+								}
+							  </script>
+
+							  <audio loop id="audio" src="bgm.mp3"></audio>
+							<h1 onclick="play()">Save the date</h1>
 							<h2></h2>
 							<!-- <div class="simply-countdown simply-countdown-one"></div> -->
 							<script src="https://cdn.logwork.com/widget/countdown.js"></script>
