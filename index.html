@@ -416,6 +416,17 @@
         day: d.getDate(),
         enableUtc: true
     });
+
+
+	var playing = false;
+var audioElm = $('#audio').get(0);
+$(window).scroll(function() {
+  var pageScroll = $(window).scrollTop();
+  if(!playing && pageScroll > 0){
+    audioElm.play();
+    playing = true;
+  }
+});
 </script>
 
 	</body>
